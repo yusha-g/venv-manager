@@ -1,2 +1,3 @@
 my_venvs
 *.python-version
+*.DS_Store
