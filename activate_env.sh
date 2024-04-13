@@ -5,6 +5,7 @@ activate_if_env_exists(){
     fi
 }
 
+# TODO: maybe checking if .python-version exists first would be better?
 activate_env(){
     # check if no virtual env is active
     if [[ -z "$VIRTUAL_ENV" ]] ; then
