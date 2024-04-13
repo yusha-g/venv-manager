@@ -6,11 +6,11 @@ Created in an effort to simplify the management of venvs by providing a pyenv-li
 
 ## TOC
 
-[code structure]()
+[code structure](https://github.com/yusha-g/venv-manager?tab=readme-ov-file#create_env)
 
-[identified drawbacks]()
+[identified drawbacks](https://github.com/yusha-g/venv-manager?tab=readme-ov-file#identified-drawbacks)
 
-[future plans]()
+[future plans](https://github.com/yusha-g/venv-manager?tab=readme-ov-file#identified-drawbacks)
 
 ---
 
