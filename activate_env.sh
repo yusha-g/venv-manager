@@ -1,7 +1,7 @@
 activate_if_env_exists(){
     if [ -d ./my_venvs/$1 ] ; then
         #activate
-        echo "env $1 found"
+        source ./my_venvs/$1/bin/activate
     fi
 }
 

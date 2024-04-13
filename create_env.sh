@@ -1,7 +1,7 @@
 create_env(){
     # input virtual env name -- default: .venv
     read -p "Enter virtual environment name (optional, default: .venv): " env_name
-    if [ -z $virtual_env ] ; then
+    if [ -z $env_name ] ; then
         env_name=".venv"
     fi
 
