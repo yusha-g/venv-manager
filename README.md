@@ -8,9 +8,11 @@ Created in an effort to simplify the management of venvs by providing a pyenv-li
 
 [code structure](https://github.com/yusha-g/venv-manager?tab=readme-ov-file#create_env)
 
+[setup](https://github.com/yusha-g/venv-manager?tab=readme-ov-file#setting-up-the-scripts-in-your-system)
+
 [identified drawbacks](https://github.com/yusha-g/venv-manager?tab=readme-ov-file#identified-drawbacks)
 
-[future plans](https://github.com/yusha-g/venv-manager?tab=readme-ov-file#identified-drawbacks)
+[future plans](https://github.com/yusha-g/venv-manager?tab=readme-ov-file#future-additions-that-may-or-may-not-materialize)
 
 ---
 
@@ -44,6 +46,8 @@ Created in an effort to simplify the management of venvs by providing a pyenv-li
             - if not active: activate venv in `.python-version`
             - else: deactivate current env and activate venv in `.python-version`.
 
+# setting up the scripts in your system
+...
 # identified drawbacks
 
 - auto-activate and deactivate only works if you `cd` in and out of the directory. 
