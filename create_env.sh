@@ -16,6 +16,7 @@ create_env(){
 
         # in my_venvs create venv with provided name
         python3 -m venv  my_venvs/$env_name
+        echo "$env_name successfully created at my_venvs/$env_name"
 
         # [optional] create symlink to venv
     fi

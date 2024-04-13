@@ -1,7 +1,7 @@
 activate_if_env_exists(){
-    if [ -d ./my_venvs/$1 ] ; then
-        #activate
-        source ./my_venvs/$1/bin/activate
+    env_path=my_venvs/$1
+    if [ -d $env_path ] ; then
+        source $env_path/bin/activate
     fi
 }
 
@@ -19,7 +19,6 @@ activate_env(){
             read -p "Enter name of virtual environment to activate: " env_name
             activate_if_env_exists $env_name
         fi
-
     # if virtual env is active
     # give message and ask to deactivate first
     else
