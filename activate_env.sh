@@ -1,5 +1,5 @@
 activate_if_env_exists(){
-    env_path=my_venvs/$1
+    env_path=~/venv-manager/my_venvs/$env_name/$1
     if [ -d $env_path ] ; then
         source $env_path/bin/activate
     fi
