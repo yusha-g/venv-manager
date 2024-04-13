@@ -48,14 +48,14 @@ Created in an effort to simplify the management of venvs by providing a pyenv-li
 
 # setting up the scripts in your system
 ## OS X
-- Goto folder User/<username>
+- Goto folder User/{username}
     - go > go to folder > type: `~` and hit go
 - in .bash_profile add the following:
-`bash
+```bash
 source ~/venv-manager/create_env.sh
 source ~/venv-manager/activate_env.sh
 #source ~/venv-manager/cd_into_env.sh #not yet working
-`
+```
 - refresh terminal and it should be working
 # identified drawbacks
 
