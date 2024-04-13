@@ -37,7 +37,7 @@ Created in an effort to simplify the management of venvs by providing a pyenv-li
         - If it doesn’t exist: ask for name of venv to activate.
     - Else: echo message prompting the deactivation of current venv
 
-### autoactivate_env
+### cd_into_env
 
 - check if `.python-version` exists in current directory.
     - if exists:
