@@ -1,4 +1,5 @@
-autoactivate_env(){
+cd_into_env(){
+    buildin cd "@"
     # check if .python-version exists in current dir
     # if exists, read venv name
 
