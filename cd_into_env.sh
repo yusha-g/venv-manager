@@ -14,13 +14,21 @@ cd(){
             if [ -d $env_path ] ; then
                 source $env_path/bin/activate
             fi
+
+        # parent env is active
+        # deactivate it, and activate current sub env
+        else
+            deactivate
+            if [ -d $env_path ] ; then
+                source $env_path/bin/activate
+            fi
         fi
     else
         if [ ! -z "$VIRTUAL_ENV" ] ; then
             # if virtul_env is active, check if folder is a subdir of original virtual_env
             # if yes then do nothing
             # else deactivate
-            if [[ "$PWD"/ != "$parentdir"/* ]] ; then
+            if [[ "$PWD"/ != "$parent_dir"/* ]] ; then
                 deactivate
             fi
         fi
