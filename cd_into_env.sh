@@ -4,6 +4,8 @@ cd(){
     # check if .python-version exists in current dir
     # if exists, read venv name
     if [ -e .python-version ] ; then
+        # save dir of .python-version
+        parent_dir=$PWD
         env_name="`cat .python-version`"
         env_path=~/venv-manager/my_venvs/$env_name
         # check if no virtual env is active
@@ -18,7 +20,6 @@ cd(){
             # if virtul_env is active, check if folder is a subdir of original virtual_env
             # if yes then do nothing
             # else deactivate
-            parentdir="$(dirname "$VIRTUAL_ENV")"
             if [[ "$PWD"/ != "$parentdir"/* ]] ; then
                 deactivate
             fi
